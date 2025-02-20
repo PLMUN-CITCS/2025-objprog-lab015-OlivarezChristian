@@ -1,0 +1,15 @@
+public class VariableScope {
+  //Global
+  static int globalCount = 100;
+  public static void main(String[] args) {
+    System.out.println("Global count (from main): " + globalCount);
+    showScope();
+  }
+  //method for show scope
+      public static void showScope() {
+          int localCount = 50;
+          System.out.println("Global Count (from showScope): " + globalCount);
+          System.out.println("Local Count (from showScope): " + localCount);
+      }
+  }
+  
